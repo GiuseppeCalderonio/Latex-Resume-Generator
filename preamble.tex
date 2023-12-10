@@ -1,0 +1,31 @@
+\documentclass[letterpaper, 0pt]{article}
+\usepackage[margin=0.15in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{0.1em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.2\baselineskip}{0.5\baselineskip}
+
+\pagestyle{empty}
+
+\begin{document}
+
+% ---TITLE AND PERSONAL INFORMATION---
+
+\input{vars}
+
+\begin{center}
+    \textbf{\Huge \scshape  \name \surname} \\ \vspace{2pt}
+    \small \phone $|$ \href{mailto:\email}{\underline{\email}} $|$ 
+    \href{\linkedin}{\underline{Linkedin}} $|$
+    \href{\github}{\underline{GitHub}}
+\end{center}
